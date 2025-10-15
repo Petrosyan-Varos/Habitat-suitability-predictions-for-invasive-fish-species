@@ -7,28 +7,34 @@ Authors: Varos Petrosyan, Fedor Osipov
 Purpose: Reduce spatial autocorrelation in species occurrence records.
 
 Description: This R script uses the spThin R package (Aiello-Lammens et al., 2015) to generate seven thinned SOR subsets, each with a minimum inter-record distance ranging from 10 to 70 km (in 10 km increments). The script is executed separately for each geographic region—North America, Europe, Northern Eurasia, Armenia and adjacent regions, and Southeast Asia—and for each species individually. This approach accounts for uneven sampling intensity across regions and reduces sampling bias.
+
 Input data for Carassius gibelio:
 •	Carassius_gibelio_N_America.csv — North America
 •	Carassius_gibelio_Europe.csv — Europe
 •	Carassius_gibelio_Northern_Eurasia.csv — Northern Eurasia
 •	Carassius_gibelio_Armenia_and_adjacent_regions.csv — Armenia and adjacent regions
 •	Carassius_gibelio_Southeast_Asia.csv — Southeast Asia
+
 Input data for Pseudorasbora parva:
 •	Pseudorasbora_parva_Europe.csv — Europe
 •	Pseudorasbora_parva_Northern_Eurasia.csv — Northern Eurasia
 •	Pseudorasbora_parva_Armenia_and_adjacent_regions.csv — Armenia and adjacent regions
 •	Pseudorasbora_parva_Southeast_Asia.csv — Southeast Asia
+
 Output:
 •	Location: Working_Directory/Source_Data/ALL_SORS/CSV_Full/
 •	All *.csv files contain three columns: Species, Dd_long, and Dd_lat.
 •	After selecting a species, the script generates seven files, each representing a dataset with a specified minimum distance between occurrence records (10–70 km).
 Output file location:
 Working_Directory/Results/Reduced_SORS/
+
 Next steps:
 It is recommended to evaluate the resulting subsets using the Average Nearest Neighbor Index (ANNI), for example with ArcGIS Desktop 10.8.1 (ESRI, 2020).
+
 Example:
 The results of record thinning (SORs_Full_csv.zip) using this script for C. gibelio and P. parva, including both invasive and native ranges, are provided in the SORs_Reduced_csv.zip archive.
 
+ --------------------------
  
 2. Assesment of multicollinearity of predictor variables
 Script name: VIF_Spearman_EcoInf.R
@@ -65,6 +71,8 @@ Example: This script demonstrates that the selected variables meet the chosen VI
 Reference:
 Chatterjee, S., Hadi, A. S. 2006. Regression analysis by example, fourth ed., New Jersey.
 
+--------------------------------
+
 3. Estimates of climatic niche metrics for the species under the ECOUE concept 
 Script name: ECOUE_species_EcoInf.R
 
@@ -73,6 +81,7 @@ Authors: Varos Petrosyan, Fedor Osipov
 Purpose: Estimation of seven climatic niche metrics under the ECOUE framework
 
 Description: This script calculates seven climatic niche metrics (Em, Sm, Um, Bn, Bi, BR, Sim) for invasive species under the extended ECOUE (Ecological Niche Overlap and Unfilled–Expansion) framework. The ECOUE approach integrates PCA-env analysis to quantify and compare the realized climatic niches between native and invasive ranges of a species.
+
 The extended ECOUE framework (Liu et al., 2020; Petrosyan et al., 2023) expands traditional niche overlap metrics by including additional niche breadth indices:
  - Sm (stability index): proportion of the invasive niche overlapping with the native niche.
  - Em (expansion index): proportion of the invasive niche not occupied in the native range.
@@ -110,6 +119,7 @@ Region     – Invasive region name or pseudo-absence area name
 Example:
 The provided dataset demonstrates the ECOUE analysis using P. parva data   (Pseudo_parva_BackgrNative.csv and Pseudo_parva_BackgrInvasive.csv).
 Additional files for C. gibelio are included for running the script on another species.
+
 Requirements:
 R packages: ecospat, raster, sp
 
@@ -119,6 +129,7 @@ Liu, C. et al. (2020). https://doi.org/10.1073/pnas.2004289117.
 
 Petrosyan, V. et al. (2023). https://doi.org/10.1134/S106235902360126X.
 
+-----------------------------------------
  
 4. Bootstrap assessment of the Continuous Boyce Index (CBI) 
 Script name: CBI_EcoInf.R
@@ -128,6 +139,7 @@ Authors: Varos Petrosyan, Fedor Osipov
 Purpose: Assessing model performance using Continuous Boyce's index.
 
 Description: This script performs a bootstrap-based evaluation of model performance using the Continuous Boyce Index (CBI). It estimates the mean and confidence intervals of CBI values from habitat suitability raster data and species occurrence records (SORs). The script randomly generates background points, computes CBI values for multiple bootstrap replicates, and saves both  summary statistics and individual replicate results.
+
 Input files location:
 Working_Directory/Source_Data/
 Input files (see SDMs_SORs.zip):
@@ -143,6 +155,8 @@ Output files:
 •	CBI_bootstrap_results.csv — contains individual bootstrap replicates.
 
 Example: This example uses P. parva data (Maxent_P_parva_SDM.tif and P_parva_SORs_for_ArmeniaAdReg.csv) to demonstrate how the script works. 
+
+-------------------------------------------
  
 List of files
 1. Spatial Thinning of Species Occurrence Records (SORs)
