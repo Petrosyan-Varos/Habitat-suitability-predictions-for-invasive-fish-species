@@ -1,5 +1,6 @@
 This document describes the R scripts used for processing species occurrence records, reducing spatial autocorrelation, evaluating and selecting predictor variables for species distribution modeling (SDMs), analyzing climatic niches using PCA-env, and conducting bootstrap assessments of the Continuous Boyce Index (CBI).
 
+
 1. Spatial Thinning of Species Occurrence Records (SORs)
 Script name: spThin_EcoInf.R
 
@@ -171,7 +172,7 @@ List of files
    
 2. Assesment of multicollinearity of predictor variables
 
-2.1.VIF_Spearman_EcoInf.R
+2.1. VIF_Spearman_EcoInf.R
 
 2.2. Predictors.zip (These layers are presented at a resolution of 30 arc seconds due to a file size limitation.)
    
