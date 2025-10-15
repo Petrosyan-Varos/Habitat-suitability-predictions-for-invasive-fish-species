@@ -172,7 +172,7 @@ List of files
 
 2.1.VIF_Spearman_EcoInf.R
 
-2.2. Predictors.zip
+2.2. Predictors.zip (These layers are presented at a resolution of 30 arc seconds due to a file size limitation)
    
 3. Estimates of climatic niche metrics for the species under the ECOUE concept
 
@@ -184,7 +184,7 @@ List of files
 
 4.1. CBI_EcoInf.R
 
-4.2. SDMs_SORs.zip
+4.2. SDMs_SORs.zip (The SDM raster layers of suitable habitats for P. parva in the study region are presented at a resolution of 30 arc seconds due to a file size limitation)
 
 ## License
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
