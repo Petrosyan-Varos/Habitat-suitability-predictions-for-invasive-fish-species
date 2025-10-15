@@ -32,12 +32,12 @@
 ##
 ##  Requirements:
 ##    - R version = 4.2
-##    - Packages: raster, ecospat, sp, dplyr
+##    - Packages: raster, ecospat, sp
 ##
 ##  Example usage:
 ##    source("CBI_EcoInf.R")
 ##
-##  Author: [Petrosya Varos]
+##  Authors: [Petrosyan Varos, Fedor Osipov ]
 ##  Affiliation: [A.N. Severtsov Institute of Ecology and Evolution of the Russian Academy of Sciences, Moscow, Russia]
 ##  Date: [October 14, 2025]
 ##====================================================================================##
@@ -55,13 +55,13 @@ PartToResults <-paste0(getwd(),"/","Results")
 
 ##=== Input data ===##
 # Specify the raster file containing predicted habitat suitability
-SDM_raster_FileName <- file.path(PathToSources, "Maxent_Carasus_SDM.tif") 
+SDM_raster_FileName <- file.path(PathToSources, "Maxent_P_parva_SDM.tif") 
 
 ##=== Read the raster layer  
 pred_rast <- raster(SDM_raster_FileName)
 
 ##=== Specify the file containing species occurrence records
-presence_points_File<-file.path(PathToSources, "C_gibelio_SORs_for_ArmeniaAdReg.csv ") #*
+presence_points_File<-file.path(PathToSources, "P_Parva_Armenia_and_Adjreg.csv") #*
 
 ##=== Read the file that contains two columns: lon and lat
 pres_pts <- read.csv(presence_points_File)
@@ -104,7 +104,6 @@ boyce_values <- replicate(n_reps, boyce_once(pred_rast, pres_pts, n_bg = 1000))
 ##=== Bootstrap estimation of the mean CBI
 mean_boyce <- mean(boyce_values, na.rm = TRUE)
 cat("CBI mean =", round(mean_boyce, 3), "\n")
-var(boyce_values)
 
 ##=== Confidence interval estimation - 0.025, 0.975
 ci <- quantile(boyce_values, probs = c(0.025, 0.975), na.rm = TRUE)
