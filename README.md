@@ -120,24 +120,27 @@ Petrosyan, V. et al. (2023). https://doi.org/10.1134/S106235902360126X.
  
 4. Bootstrap assessment of the Continuous Boyce Index (CBI) 
 Script name: CBI_EcoInf.R
+
 Authors: Varos Petrosyan, Fedor Osipov
-Purpose: Assessing model performance using Continuous Boyce's index
+
+Purpose: Assessing model performance using Continuous Boyce's index.
+
 Description: This script performs a bootstrap-based evaluation of model performance using the Continuous Boyce Index (CBI). It estimates the mean and confidence intervals of CBI values from habitat suitability raster data and species occurrence records (SORs). The script randomly generates background points, computes CBI values for multiple bootstrap replicates, and saves both  summary statistics and individual replicate results.
 Input files location:
 Working_Directory/Source_Data/
 Input files (see SDMs_SORs.zip):
-This archive contains four files:
-1.	Maxent_C_gibelio_SDM.tif – predicted suitable habitats for C. gibelio in Armenia and adjacent regions
-2.	C_gibelio_SORs_for_ArmeniaAdReg.csv – species occurrence records of C. gibelio in Armenia and adjacent regions
-3.	Maxent_P_parva_SDM.tif – predicted suitable habitats for P. parva in Armenia and adjacent regions
-4.	P_parva_SORs_for_ArmeniaAdReg.csv – species occurrence records of P. parva in Armenia and adjacent regions
+
+This archive contains two files:
+1.	Maxent_P_parva_SDM.tif – predicted suitable habitats for P. parva in Armenia and adjacent regions
+2.	P_parva_SORs_for_ArmeniaAdReg.csv – species occurrence records of P. parva in Armenia and adjacent regions
+
 Output files location:
 Working_Directory/Results/
 Output files:
 •	CBI_confIntervals.csv — contains the number of replicates and background points, the estimation method, the average CBI, and the lower and upper limits of the confidence interval.
 •	CBI_bootstrap_results.csv — contains individual bootstrap replicates.
-This example uses C. gibelio data (Maxent_C_gibelio_SDM.tif and C_gibelio_SORs_for_ArmeniaAdReg.csv) to demonstrate how the script works. 
-However, the archive also includes data (Maxent_P_parva_SDM.tif and P_parva_SORs_for_ArmeniaAdReg.csv) for running the script on a different species.
+
+Example: This example uses P. parva data (Maxent_P_parva_SDM.tif and P_parva_SORs_for_ArmeniaAdReg.csv) to demonstrate how the script works. 
  
 List of files
 1. Spatial Thinning of Species Occurrence Records (SORs)
