@@ -27,10 +27,10 @@ Example:
 The results of record thinning (SORs_Full_csv.zip) using this script for C. gibelio and P. parva, including both invasive and native ranges, are provided in the SORs_Reduced_csv.zip archive.
  
 2. Assesment of multicollinearity of predictor variables
-Script name: VIF_Sperman_EcoInf.R
+Script name: VIF_Spearman_EcoInf.R
 Authors: Varos Petrosyan, Fedor Osipov
 Purpose: Selection of predictor variables for constructing SDMs
-Description: The VIF_Sperman_EcoInf.R script estimates Spearman's pairwise rank correlation coefficients and multicollinearity of variables for constructing SDMs. Variables with an absolute Spearman's pairwise rank correlation coefficient greater than 0.70 were excluded from the model. Multicollinearity of the remaining variables was further assessed using the variance inflation factor (VIF) in the R usdm package. A variable was considered multicollinear and excluded from the model if VIF > 10 (Chatterjee and Hadi, 2006).
+Description: The VIF_Spearman_EcoInf.R script estimates Spearman's pairwise rank correlation coefficients and multicollinearity of variables for constructing SDMs. Variables with an absolute Spearman's pairwise rank correlation coefficient greater than 0.70 were excluded from the model. Multicollinearity of the remaining variables was further assessed using the variance inflation factor (VIF) in the R usdm package. A variable was considered multicollinear and excluded from the model if VIF > 10 (Chatterjee and Hadi, 2006).
 
 Input:
 Working_Directory/Source_Data/Predictors/
@@ -135,7 +135,7 @@ List of files
 1.2. SORs_Full_csv.zip
 1.3. SORs_Reduced_csv.zip
 2. Assesment of multicollinearity of predictor variables
-2.1.VIF_Sperman_EcoInf.R
+2.1.VIF_Spearman_EcoInf.R
 2.2. Predictors.zip
 3. Estimates of climatic niche metrics for the species under the ECOUE concept
 3.1. ECOUE_species_EcoInf.R
