@@ -147,7 +147,7 @@ List of files
 
 ## License
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
-Copyright (c) [2025] [Varos Petrosyan and Fedor Osipov]
+Copyright (c) 2025 Varos Petrosyan and Fedor Osipov
 For questions or collaboration inquiries, please contact:
 Varos Petrosyan
 Email: vgpetrosyan@gmail.com
