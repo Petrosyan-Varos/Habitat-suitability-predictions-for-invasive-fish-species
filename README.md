@@ -113,8 +113,10 @@ Additional files for C. gibelio are included for running the script on another s
 Requirements:
 R packages: ecospat, raster, sp
 
-Reference:
+References:
+
 Liu, C. et al. (2020). https://doi.org/10.1073/pnas.2004289117.
+
 Petrosyan, V. et al. (2023). https://doi.org/10.1134/S106235902360126X.
 
  
