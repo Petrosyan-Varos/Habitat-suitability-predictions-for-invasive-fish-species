@@ -32,8 +32,11 @@ The results of record thinning (SORs_Full_csv.zip) using this script for C. gibe
  
 2. Assesment of multicollinearity of predictor variables
 Script name: VIF_Spearman_EcoInf.R
+
 Authors: Varos Petrosyan, Fedor Osipov
+
 Purpose: Selection of predictor variables for constructing SDMs
+
 Description: The VIF_Spearman_EcoInf.R script estimates Spearman's pairwise rank correlation coefficients and multicollinearity of variables for constructing SDMs. Variables with an absolute Spearman's pairwise rank correlation coefficient greater than 0.70 were excluded from the model. Multicollinearity of the remaining variables was further assessed using the variance inflation factor (VIF) in the R usdm package. A variable was considered multicollinear and excluded from the model if VIF > 10 (Chatterjee and Hadi, 2006).
 
 Input:
@@ -64,8 +67,11 @@ Chatterjee, S., Hadi, A. S. 2006. Regression analysis by example, fourth ed., Ne
 
 3. Estimates of climatic niche metrics for the species under the ECOUE concept 
 Script name: ECOUE_species_EcoInf.R
+
 Authors: Varos Petrosyan, Fedor Osipov
+
 Purpose: Estimation of seven climatic niche metrics under the ECOUE framework
+
 Description: This script calculates seven climatic niche metrics (Em, Sm, Um, Bn, Bi, BR, Sim) for invasive species under the extended ECOUE (Ecological Niche Overlap and Unfilled–Expansion) framework. The ECOUE approach integrates PCA-env analysis to quantify and compare the realized climatic niches between native and invasive ranges of a species.
 The extended ECOUE framework (Liu et al., 2020; Petrosyan et al., 2023) expands traditional niche overlap metrics by including additional niche breadth indices:
  - Sm (stability index): proportion of the invasive niche overlapping with the native niche.
