@@ -29,7 +29,7 @@ It is recommended to evaluate the resulting subsets using the Average Nearest Ne
 Example:
 The results of record thinning (SORs_Full_csv.zip) using this script for C. gibelio and P. parva, including both invasive and native ranges, are provided in the SORs_Reduced_csv.zip archive.
  
-3. Assesment of multicollinearity of predictor variables
+2. Assesment of multicollinearity of predictor variables
 Script name: VIF_Spearman_EcoInf.R
 Authors: Varos Petrosyan, Fedor Osipov
 Purpose: Selection of predictor variables for constructing SDMs
