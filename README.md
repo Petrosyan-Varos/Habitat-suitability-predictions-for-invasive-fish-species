@@ -56,8 +56,8 @@ R packages: raster, usdm, ENMTools, corrplot
 Example: This script demonstrates that the selected variables meet the chosen VIF threshold for modeling.
 
 Reference:
-Chatterjee, S., Hadi, A. S. 2006. Regression analysis by example, fourth ed., New Jersey
- 
+Chatterjee, S., Hadi, A. S. 2006. Regression analysis by example, fourth ed., New Jersey.
+
 3. Estimates of climatic niche metrics for the species under the ECOUE concept 
 Script name: ECOUE_species_EcoInf.R
 Authors: Varos Petrosyan, Fedor Osipov
