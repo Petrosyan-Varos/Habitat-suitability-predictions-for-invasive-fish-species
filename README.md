@@ -159,16 +159,20 @@ Example: This example uses P. parva data (Maxent_P_parva_SDM.tif and P_parva_SOR
 -------------------------------------------
  
 List of files
+
 1. Spatial Thinning of Species Occurrence Records (SORs)
 1.1. spThin_EcoInf.R
 1.2. SORs_Full_csv.zip
 1.3. SORs_Reduced_csv.zip
+   
 2. Assesment of multicollinearity of predictor variables
 2.1.VIF_Spearman_EcoInf.R
 2.2. Predictors.zip
+   
 3. Estimates of climatic niche metrics for the species under the ECOUE concept
 3.1. ECOUE_species_EcoInf.R
 3.2. Species_NatInv-PsAb_points.zip
+   
 4. Bootstrap assessment of the Continuous Boyce Index (CBI)
 4.1. CBI_EcoInf.R
 4.2. SDMs_SORs.zip
