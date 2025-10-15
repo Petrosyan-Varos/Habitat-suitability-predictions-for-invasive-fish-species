@@ -28,7 +28,8 @@ Next steps:
 It is recommended to evaluate the resulting subsets using the Average Nearest Neighbor Index (ANNI), for example with ArcGIS Desktop 10.8.1 (ESRI, 2020).
 Example:
 The results of record thinning (SORs_Full_csv.zip) using this script for C. gibelio and P. parva, including both invasive and native ranges, are provided in the SORs_Reduced_csv.zip archive.
- 
+
+ 
 2. Assesment of multicollinearity of predictor variables
 Script name: VIF_Spearman_EcoInf.R
 Authors: Varos Petrosyan, Fedor Osipov
