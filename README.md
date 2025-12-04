@@ -1,6 +1,6 @@
 # This document describes the R scripts used for:
 
-## 1. Spatial Thinning of Species Occurrence Records (SORs), Script name: spThin_EcoInf.R
+## 1. Spatial Thinning of Species Occurrence Records (SORs). Script name: spThin_EcoInf.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Reduce spatial autocorrelation in species occurrence records.  
@@ -28,7 +28,7 @@ Example: The results of record thinning (SORs_Full_csv.zip) using this script fo
 
 ________________________________________
 
-## 2. Assessment of multicollinearity of predictor variables Script name: VIF_Spearman_EcoInf.R
+## 2. Assessment of multicollinearity of predictor variables. Script name: VIF_Spearman_EcoInf.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Selection of predictor variables for constructing SDMs  
@@ -60,7 +60,7 @@ Reference: Chatterjee, S., Hadi, A. S. 2006. Regression Analysis by Example, fou
 
 ________________________________________
 
-## 3. Estimates of climatic niche metrics for the species under the ECOUE concept Script name: ECOUE_species_EcoInf.R
+## 3. Estimates of climatic niche metrics for the species under the ECOUE concept. Script name: ECOUE_species_EcoInf.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Estimation of seven climatic niche metrics under the ECOUE framework  
@@ -98,7 +98,7 @@ Petrosyan, V. et al. (2023). https://doi.org/10.1134/S106235902360126X.
 
 ________________________________________
 
-## 4. Bootstrap assessment of the Continuous Boyce Index (CBI) Script name: CBI_EcoInf.R
+## 4. Bootstrap assessment of the Continuous Boyce Index (CBI). Script name: CBI_EcoInf.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Assessing model performance using Continuous Boyce's index.  
@@ -119,7 +119,7 @@ Example: This example uses P. parva data (Maxent_P_parva_SDM.tif and P_parva_SOR
 
 ________________________________________
 
-## 5. Estimation of accessible area (M) radius for SDM, Script name: Calculate_M_Area_Radius.R
+## 5. Estimation of accessible area (M) radius for SDM. Script name: Calculate_M_Area_Radius.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Estimation of accessible area (M) radius for SDM.  
@@ -143,7 +143,7 @@ Example: Estimation of accessible area (M) radius for SDM of  Carassius gibelio 
 
 ______________________________________
 
-## 6. MaxEnt Hyperparameter Optimization using biomod2, Script name: Maxent_parameters_using_Biomod2_tuning.R
+## 6. MaxEnt Hyperparameter Optimization using biomod2. Script name: Maxent_parameters_using_Biomod2_tuning.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Determining the optimal MaxEnt parameters using BIOMOD_tuning functions.  
@@ -160,7 +160,7 @@ Example: This example uses Armenia_TopWat_Layers.zip and P. parva data (Parva_Lo
 
 ________________________________________
 
-## 7. Statistical comparison of SDM model performance, Script name: Compare_SDM_Metrics.R
+## 7. Statistical comparison of SDM model performance. Script name: Compare_SDM_Metrics.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Statistical comparison of SDM model performance.  
@@ -174,7 +174,7 @@ Example: This example uses Parva_Compare_SDM_V2.csv and Caras_Compare_SDM_V2.csv
 
 ________________________________________
 
-## 8. Global SDM modelling (G-SDM) with MaxEnt, Script name: GSDM_Global_Model_and_Projection.R
+## 8. Global SDM modelling (G-SDM) with MaxEnt. Script name: GSDM_Global_Model_and_Projection.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Global SDM modelling (G-SDM) with MaxEnt and projection to South Caucasus / Armenia  
@@ -188,7 +188,7 @@ Example: This example uses Global environmental rasters (from https://www.worldc
 
 ________________________________________
 
-## 10. Regional SDM modelling (R-SDM) with MaxEnt, Script name: R-SDM_Creation_and_Projection.R
+## 10. Regional SDM modelling (R-SDM) with MaxEnt. Script name: R-SDM_Creation_and_Projection.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Regional SDM modelling (R-SDM) with MaxEnt  
