@@ -1,6 +1,6 @@
 This document describes the R scripts used for:
-1. Spatial Thinning of Species Occurrence Records (SORs), Script name: spThin_EcoInf.R
-Authors: Varos Petrosyan, Fedor Osipov
+1. Spatial Thinning of Species Occurrence Records (SORs), Script name: spThin_EcoInf.R.
+Authors: Varos Petrosyan, Fedor Osipov.
 Purpose: Reduce spatial autocorrelation in species occurrence records.
 Description: This R script uses the spThin R package (Aiello-Lammens et al., 2015) to generate seven thinned SOR subsets, each with a minimum inter-record distance ranging from 10 to 70 km (in 10 km increments). The script is executed separately for each geographic region—North America, Europe, Northern Eurasia, Armenia and adjacent regions, and Southeast Asia—and for each species individually. This approach accounts for uneven sampling intensity across regions and reduces sampling bias.
 Input data for Carassius gibelio: • Carassius_gibelio_N_America.csv — North America • Carassius_gibelio_Europe.csv — Europe • Carassius_gibelio_Northern_Eurasia.csv — Northern Eurasia • Carassius_gibelio_Armenia_and_adjacent_regions.csv — Armenia and adjacent regions • Carassius_gibelio_Southeast_Asia.csv — Southeast Asia
