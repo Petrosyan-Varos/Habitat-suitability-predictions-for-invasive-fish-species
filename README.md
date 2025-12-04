@@ -188,7 +188,7 @@ Example: This example uses Global environmental rasters (from https://www.worldc
 
 ________________________________________
 
-## 10. Regional SDM modelling (R-SDM) with MaxEnt. Script name: R-SDM_Creation_and_Projection.R
+## 9. Regional SDM modelling (R-SDM) with MaxEnt. Script name: R-SDM_Creation_and_Projection.R
 
 Authors: Varos Petrosyan, Fedor Osipov  
 Purpose: Regional SDM modelling (R-SDM) with MaxEnt  
